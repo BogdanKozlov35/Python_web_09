@@ -19,6 +19,7 @@ def get_connection():
         mongo_pass = config.get('DB', 'pass')
         db_name = config.get('DB', 'db_name')
         domain = config.get('DB', 'domain')
+
     except configparser.NoSectionError as e:
         raise ValueError(f"Missing section in configuration file: {e.section}")
 
