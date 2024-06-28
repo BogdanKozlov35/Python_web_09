@@ -5,7 +5,7 @@ import os
 
 def get_connection():
 
-    config_file = '/Users/kozlovalex/Documents/GitHub/Python_web_09/connection/config.ini'
+    config_file = 'connection/config.ini'
 
     if not os.path.exists(config_file):
         raise FileNotFoundError(f"Configuration file not found: {config_file}")
